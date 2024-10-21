@@ -13,6 +13,7 @@ la función pregunta la edad y comprueba que sea un numero int
     while edad is None :
         try:
             edad = int(input('¿Cuantos años tienes? '))
+            
         except:
             print('Introduza solo numero')
     return edad
