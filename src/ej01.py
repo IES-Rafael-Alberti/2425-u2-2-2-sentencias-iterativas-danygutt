@@ -5,7 +5,7 @@ Escribir un programa que pida al usuario una palabra y la muestre por pantalla
 10 veces.
 '''
 #entrada
-def pideUnaPalabra():
+def pideUnaPalabra()-> str:
     '''Esta funcion le pide la palabra al usuario con un input de tipo str'''
     palabra = None
     while palabra is None or palabra.strip() == "":
@@ -14,12 +14,12 @@ def pideUnaPalabra():
             print('Esta cadena está vacía. Por favor, introduzca una palabra.')
     return palabra
 #proceso
-def recibePalabraMultiplicaPorDiez(palabra):
+def recibePalabraMultiplicaPorDiez(palabra:str)->str:
     ''' esta devuelve una lista con las 10 palabras'''
     return [palabra]*10  
 
 #salida
-def salida(listaDePalabras):
+def salida(listaDePalabras:str)->str:
     '''y esta imprime la lista de las 10 mismas palabras'''
     for palabra in listaDePalabras:
         print(palabra)

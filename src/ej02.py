@@ -19,14 +19,14 @@ la función pregunta la edad y comprueba que sea un numero int
     return edad
 
 #proceso
-def edadDeUnoAEdad(edad):
+def edadDeUnoAEdad(edad:int)->int:
     '''
 una funcin que cuente desde el 1 hasta
     '''
     return list(range(1,edad+1))
     
 #salida
-def imprimeLosAñosQueHaCumplido(listaEdad):
+def imprimeLosAñosQueHaCumplido(listaEdad:int)->str:
     print(f'Los años que ha cumplido son: {", ".join(str(año) for año in listaEdad)}')
 
 # Programa principal
